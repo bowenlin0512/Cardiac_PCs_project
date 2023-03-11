@@ -1,5 +1,5 @@
 # Cardiac_PCs_project
-This the source codes for the Cardiac PCs project.
+The source codes for the Cardiac PCs project.
 
 
 Contact: 
