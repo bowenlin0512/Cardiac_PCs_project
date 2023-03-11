@@ -131,17 +131,6 @@ markers.to.plot <- c("T","Tbx6","Hoxb1","Snai1","Kdr","Mixl1","Lhx1","Eomes","Gs
                      "Pcdh7", "Prelid2", "Irx4","Mki67","Epcam","Foxa2",
                      "Cldn7","Cdh5","Mfap2")
 
-# list_genes=split(topN$gene, topN$cluster)
-list_genes=list(T=c("PTPRC","CD3D","CD3E", "CD3G", "CD4", "CD8A","CD8B",
-                    "CCR7", "LEF1", "GZMH", "GZMK"),
-                B=c("CD79A", "CD79B", "MS4A1", "TCL1A", "CD22", "CD19"),
-                mono=c("CD14",  "S100A8", "S100A9", "FCN1",'LYZ',
-                       "FCGR3A", "MS4A7" ),
-                NK=c("NKG7","GZMB", "GZMA", "CST7"),
-                DC=c("FCER1A", "CST3", "CLEC10A"),
-                platelet=c("PPBP","GP9","ITGA2B","PF4" ) )
-
-
 DotPlot(SAN, group.by = 'cell_type',features = rev(markers.to.plot)) + scale_color_viridis()+
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
